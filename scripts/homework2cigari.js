@@ -35,3 +35,33 @@ cars.forEach(function (car) {
 // 	console.log('Years required to buy BMW: ' + years);
 // 	}
 // }
+
+
+function cigari(br, cena, avtomobil){
+	switch(avtomobil){
+		case 'dacia':
+			return 11000 / (br * 365 / 19 * cena);
+		break;
+		case 'skoda':
+			return 14000 / (br * 365 / 19 * cena);
+		break;
+		case 'vw':
+			return 20000 / (br * 365 / 19 * cena);		
+		break;
+		case 'audi':
+			return 30000 / (br * 365 / 19 * cena);
+		break;
+		case 'bmw':
+			return 50000 / (br * 365 / 19 * cena);
+		break;
+	}
+}
+
+var brojNaCigari = 38;
+var kutijaCena = 140;
+
+console.log('dacia ' + cigari(brojNaCigari, 90, 'dacia'));
+console.log('skoda ' + cigari(brojNaCigari, 90, 'dacia'));
+console.log('vw ' + cigari(brojNaCigari, 90, 'dacia'));
+console.log('audi ' + cigari(brojNaCigari, 90, 'dacia'));
+console.log('bmw ' + cigari(brojNaCigari, 90, 'dacia'));
