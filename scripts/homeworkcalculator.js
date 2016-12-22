@@ -4,24 +4,27 @@ var eden = document.querySelector('.prvbox').value;
 var dva = document.querySelector('.vtorbox').value;
 var znak = document.querySelector('.operacija');
 var fin = document.querySelector('.ednakvo');
-var result = document.querySelector('.reshenie');
+var result = document.querySelector('.reshenie').value;
+
+}
 
 // na result ili na fin kje treba da se stavi eventListener?! Kako da se 
 // kazhe deka sakash koga kje klikne na fin(button) rezultatot da go dava
 // vo result
 
 fin.addEventListener('click', function(){
-
-	if(znak == '+'){
+	calculate();
+	z = znak.value;
+	if(z == '+'){
 			return (eden + dva);
-		} else if(znak == '/'){
+		} else if(z == '/'){
 			return (eden / dva);
-		} else if(znak == '-'){
+		} else if(z == '-'){
 			return (eden - dva);
-		} else if(znak == '*'){
+		} else if(z == '*'){
 			return (eden * dva);
 	}
-}
+
 
 
 // var eden, dva, result;
