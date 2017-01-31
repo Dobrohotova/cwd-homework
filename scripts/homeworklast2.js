@@ -55,15 +55,3 @@ function getWeatherByCityName(city){
 // }
 
 
-if (pm10 > 50) {
-	alert('Opasnost!!');
-		var img = document.createElement("img");
-		img.src = "../media/images/mask-gas-male-man-46796.jpeg";
-		var src = document.querySelector("body");
-		body.appendChild(img);
-// plus da prikazhe rezultat
-} else if (pm10 < 50) {
-		// da si prikazhe rezultat za chesticite
-	} else if (pm10 = 50) {
-		alert('Zagadenosta e na granica! Se preporachuva ....')
-	};
